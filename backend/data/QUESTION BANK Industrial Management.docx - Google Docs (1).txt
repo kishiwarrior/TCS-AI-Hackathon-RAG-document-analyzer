@@ -1,0 +1,457 @@
+QUESTION BANK 
+INDUSTRIAL MANAGEMENT 
+Module I: Introduction 
+SAQ (each carry 1 marks): 
+ 
+Sl No Questions CO BTL 
+1 Which function the basic of all other functions in an 
+organisation? 
+2 1 
+2 What is the primary goal of decision making? 2 1 
+3 Define planning. 2 1 
+4 Define controlling. 2 1 
+5 What do you mean by management? 2 2 
+6 What do you understand by job satisfaction? 2 1 
+7 What is morale? 2 1 
+8 Define industrial management. 2 1 
+9 What is the primary objective of industrial management? 2 1 
+10 What is span of control? 2 1 
+11 What is delegation of authority? 2 1 
+12 What do you mean by organization structure? 2 1 
+13 Define centralization. 2 1 
+14 Define decentralization. 2 1 
+ 
+ 
+Questions carrying 5 marks: 
+ 
+Sl No Questions CO BTL 
+1 Write down the functions of management. 2 1 
+2 Write a short note on span of control. 2 2 
+3 What is industrial management? Explain the function of 
+industrial management. 
+2 2 
+4 State the difference between industrial management and 
+production management. 
+2 1 
+5 What do you mean by organization structure? What are the 
+types of organization structures? (3+2) 
+2 2 
+6 State the factors affecting industrial relations. 2 2 
+7 What is job satisfaction and what is the importance of job 
+satisfaction to an organization? 
+2 2 
+8 Explain the major factors influencing job satisfaction in an 
+organization. 
+2 2 
+9 Discuss the factors affecting organizational culture. 2 2 
+10 Explain the differences between centralization and decentralization 
+in industrial management with suitable examples. 
+2 3 
+    
+ 
+ 
+Questions carrying 15 marks: 
+ 
+Sl No Questions CO BTL 
+1 What is organization structure? Briefly explain the types of 
+organization structure with diagram. (5+10) 
+2 3 
+2 What do you mean by management. Explain the functions of the 
+management. (5+10) 
+2 3 
+3 Define the concept of industrial relation. State the factors affecting 
+industrial relations. (5+10) 
+2 3 
+4 Explain the factors affecting employee morale and discuss how to 
+overcome these in organizational context. 
+2 2 
+5 Explain the concept of organizational culture and state the difference 
+between centralization and decentralization. 
+1 1 
+ 
+ 
+ 
+Module II: PERT/CPM 
+ 
+SAQ (each carry 1 marks): 
+ 
+Sl No Questions CO BTL 
+1 Define event. 2 1 
+2 Define activity. 2 1 
+3 Define dummy activity. 2 1 
+4 Define network. 2 1 
+5 What do you mean by CPM? 2 2 
+6 Define critical activity. 2 1 
+7 What is PERT? 2 1 
+8 Define slack or float in PERT. 2 1 
+9 What is crashing? 2 1 
+10 What are the applications of crashing? 2 1 
+11 What is earliest start time? 2 1 
+12 What is latest finish time? 2 1 
+13 Define Pessimistic time. 2 1 
+14 Define optimistic time. 2 1 
+15 What do you understand by ‘most likely time’? 2 2 
+16 What is Gantt Chart? 2 1 
+ 
+ 
+Questions carrying 5 marks: 
+ 
+Sl No Questions CO BTL 
+1 What are the key differences in PERT and CPM? What are 
+the advantages of PERT and CPM? (3+2) 
+2 1 
+2 How do you calculate the earliest start time and latest finish 
+time for activities in CPM? How do you identify non -critical 
+paths in a PERT or CPM network? (2+3) 
+2 2 
+3 Compare and contrast the PERT and CPM techniques in 
+terms of their underlying principles, assumptions, and 
+applications. 
+2 2 
+4 Define pessimistic time, optimistic time and most likely time 
+& establish the relationship between them. (3+2) 
+2 1 
+5 Explain the concept of crashing with its applications. 2 2 
+6 Describe the impact of uncertainties and risks on project 
+scheduling in PERT and CPM. Discuss strategies or 
+techniques that can be employed to mitigate these risks and 
+ensure successful project completion. (2+3) 
+2 2 
+7 Discuss the concept of resource leveling in context of PERT 
+and CPM. 
+2 1 
+8 Can you provide an example of a real -world project where 
+PERT or CPM would be beneficial in scheduling and 
+management? 
+2 2 
+ 
+ 
+Questions carrying 15 marks: 
+ 
+Sl No Questions CO BTL 
+1 a) Draw the project network. Find out  the time, variance and standard 
+deviation of the project with the following time estimates in weeks: 
+(3+3+3+3) 
+ 
+ 
+b) In a construction project, an engineer estimates that the optimistic 
+time for laying the foundation is 10 days. If the most likely time is 15 
+days and the pessimistic time is 20 days, what is the expected duration 
+for laying the foundation using PERT? (3) 
+2 3 
+2 A project consists of seven activities and the time estimates of the 
+activities are furnished as under: 
+2 3 
+
+ 
+ 
+ 
+ 
+i. Draw the network diagram. 
+ii. Identify the critical path and its duration. 
+iii. What is the probability that the project will be 
+completed in 5 days earlier that the critical path 
+duration? 
+  
+3 Draw the network diagram. Determine the earliest and latest times, 
+the total float for each activity, the critical activities, the slacks of the 
+events and the project completion time. 
+ 
+ 
+2 3 
+4 Conduct a comparative analysis of PERT and CPM in the context of 
+project management. Discuss the underlying principles, 
+methodologies, advantages, and limitations of each technique. (8+7) 
+2 2 
+ 
+ 
+ 
+Module IV: Production Planning and Control (PPC) 
+SAQ (Each questions carry 1 mark): 
+ 
+Sl No Questions CO BTL 
+1 What is the primary objective of production planning and 
+control? 
+4 1 
+
+2 Which technique involves breaking down the production 
+process into smaller, more manageable tasks? 
+4 1 
+3 Which tool is commonly used for visualizing the flow of 
+work in production processes? 
+4 1 
+4 What is the purpose of material requirement planning 
+(MRP)? 
+4 1 
+5 Which approach focuses on continuously improving 
+processes and products to achieve customer satisfaction? 
+4 1 
+6 What is the primary goal of production control? 4 1 
+7 What is the purpose of a Bill of Materials (BOM)? 4 1 
+8 Which production planning tool is used to determine the 
+optimal sequence of tasks in a production process? 
+4 1 
+9 What does the term "lead time" refer to in production 
+planning and control? 
+4 1 
+10 Which quality management technique focuses on improving 
+processes by identifying and correcting defects? 
+4 1 
+11 Which production planning technique uses historical data 
+and statistical methods to predict future demand? 
+4 1 
+12 In the context of production planning and control, what 
+does the term "bottleneck" refer to? 
+4 1 
+13 Define EOQ. 4 1 
+14 Define scheduling. 4 1 
+ 
+Questions carrying 5 marks: 
+ 
+Sl No Questions CO BTL 
+1 Discuss the importance of capacity planning in production 
+planning and control. 
+4 1 
+2 What do you understand by the term ‘bottlenecking’? What 
+are the ways to reduce bottlenecking in context of PPC? 
+(2+3) 
+4 2 
+3 Explain the concept of Just-In-Time (JIT) production and its 
+significance in modern manufacturing. 
+4 2 
+4 Discuss the key principles of JIT and the benefits and 
+challenges associated with its implementation. 
+4 1 
+5 Compare and contrast push-based and pull-based 
+production systems. 
+4 2 
+6 Briefly explain the function and importance of PPC. 4 2 
+7 Write down the advantages and disadvantages of 
+push-based and pull-based production systems. 
+4 2 
+8 What is Gantt Chart? What is the purpose of Gantt Chart? 
+Write down the limitations of Gantt chart. (1+2+2) 
+4 2 
+ 
+Questions carrying 15 marks: 
+ 
+Sl No Questions CO BTL 
+1 Explain the challenges and opportunities associated with 
+implementing Just -In-Time (JIT) production in a 
+manufacturing organization. Discuss the key principles of JIT 
+and the potential benefits of its adoption. (7+8) 
+4 2 
+2 Compare and contrast various quality management 
+methodologies such as Total Quality Management (TQM), 
+Six Sigma, and Lean manufacturing. Evaluate their  
+effectiveness in improving product quality, reducing defects, 
+and enhancing customer satisfaction. (9+6) 
+4 2 
+3 What do you mean by production planning? Discuss its 
+elements. Discuss the different types of production systems. 
+(2+5+8) 
+4 2 
+4 Explain the parameters that must be considered before 
+finalizing the production system. Write down the 
+advantages and disadvantages of JIT. Briefly discuss the 
+objectives and principles of scheduling. (5+5+5) 
+4 2 
+5 What are the different types of production system? How 
+does production planning differ from production 
+control? State the functions of production planning. (4+5+6) 
+4 2 
+ 
+Module VI: Enterprise Resource Planning (ERP) 
+ 
+Questions carrying 1 mark 
+ 
+Sl No Questions CO BTL 
+1 Define JIT. 6 1 
+2 Which kind of process is JIT? 6 1 
+3 What is the basic principle of JIT? 6 1 
+4 What concept does JIT manufacturing rely on to ensure 
+smooth production flow? 
+6 1 
+5 Which metric is often used to measure the effectiveness of 
+JIT manufacturing? 
+6 2 
+6 What is the basic objective of JIT? 6 1 
+7 What does ERP stand for? 6 1 
+8 What are the key components of an ERP system? 6 1 
+9 What are the main phases of ERP implementation? 6 1 
+10 What is the major problem of ERP 6 1 
+11 What are the needs of logistics? 6 1 
+12 What is the basic need of ERP for management? 6 1 
+13 What is the role of top management commitment for 
+implementing ERP? 
+6 1 
+14 In which type of production system JIT is required? 6 1 
+ 
+ 
+Questions carrying 5 marks 
+Sl No Questions CO BTL 
+1 Compare and contrast the fundamental principles of 
+Enterprise Resource Planning (ERP) and Just -In-Time (JIT) 
+manufacturing. 
+6 1 
+2 Discuss the risks associated with ERP implementation in JIT 
+manufacturing contexts and strategies to mitigate them. 
+6 2 
+3 Describe the importance of ERP in management. 6 2 
+4 Write down the applications of ERP. 6 1 
+5 Briefly discuss the benefits of supply chain management. 6 2 
+6 Briefly explain the components of supply chain 
+management. 
+6 2 
+7 What are the advantages of JIT? 6 2 
+8 Discuss the impact of ERP systems on supply chain 
+management. 
+6 2 
+ 
+ 
+ 
+Questions carrying 15 marks: 
+ 
+Sl No Questions CO BTL 
+1 Compare and contrast traditional supply chain management 
+practices with Just-In-Time (JIT) methodologies. Evaluate the 
+advantages and disadvantages of each approach  in terms of 
+inventory   management,   responsiveness,   and 
+cost-effectiveness. (8+7) 
+6 2 
+2 Discuss the impact of ERP systems on supply chain 
+management, including inventory control, demand 
+forecasting, and supplier relationship management. 
+6 2 
+3 Explain the fundamental principles and key components of 
+supply chain management (SCM) within the context of 
+modern business operations. 
+6 2 
+4 Discuss the role of logistics in modern business operations 
+and its significance in achieving competitive advantage. 
+6 2 
+5 Discuss the concept of ERP and explain the advantages and 
+disadvantages of ERP. Write down the importance of ERP  in 
+management system. (4+6+5) 
+6 2 
+6 Write a short note on JIT and explain its advantages. (5+10) 6 2 
+ 
+ 
+Module III: Materials Management 
+ 
+Questions carrying 1 mark 
+ 
+Sl No Questions CO BTL 
+1 1. Materials management mainly focuses on 3 1 
+ A. management of raw material or components required for 
+continuous production 
+B. production of finished goods and it’s sale in the 
+appropriate market 
+C. management of logistics and supply chain activities for 
+timely market reach 
+D. distribution of materials to the seller and distributor for 
+smooth functioning of the market activities 
+  
+2 Raw Materials and WIP can be classified under   
+A. Indirect Material 
+B. Direct Material 
+C. Finished Material 
+D. Standard Parts 
+3 1 
+3 .........................is a buffer stock level or safety stock level 
+under which the stock should not be allowed to fall. 
+A. Average stock level 
+B. Maximum stock level 
+C. Minimum stock level 
+D. none 
+3 1 
+4 The optimum level of inventory is popularly referred to as 
+the ........... 
+A. Minimum stock level 
+B. Re-order stock level 
+C. Economic Order Quantity 
+D. none 
+3 1 
+5 The minimum stock level is calculated as 
+A. Reorder level – (Normal consumption x Normal delivery 
+time) 
+B. Reorder level + (Normal consumption x Normal delivery 
+time) 
+C. (Reorder level + Normal consumption) x Normal delivery 
+time 
+D. (Reorder level + Normal consumption) / Normal delivery 
+time 
+3 1 
+6 Define lead time. 3 1 
+7 Average stock level can be calculated as 
+A. Minimum stock level + 1⁄2 of Re-order level 
+B. Maximum stock level + 1⁄2 of Re-order level 
+C. Minimum stock level + 1/3 of Re-order level 
+D. Maximum stock level + 1/3 of Re-order level 
+3 1 
+8 What do you understand by EOQ? 3 1 
+9 Which of the following is not an inventory? 
+A. Machines 
+B. Raw material 
+C. Finished products 
+D. Consumable tools 
+3 1 
+10 What is re-order level? 3 1 
+11 What is safety stock? 3 1 
+12 What is inventory? 3 1 
+ 
+ 
+Questions carrying 5 marks: 
+ 
+Sl No Questions CO BTL 
+1 Discuss the purpose of Material Control. 3 2 
+2 Explain the concept and importance of EOQ? 3 2 
+3 What is the importance of material management? 3 1 
+4 What are the types of inventory? 3 1 
+5 Write a short note on ABC analysis. 3 1 
+6 Write a short note on VED analysis. 3 1 
+7 Discuss level of inventory control system. 3 1 
+8  
+ 
+3 1 
+9  
+ 
+3 1 
+ 
+ 
+Module 5: Value Analysis (VA) and Cost Control 
+ 
+Questions carrying 1 mark 
+ 
+Sl No Questions CO BTL 
+1 Define Value Analysis. 5 1 
+
+2 Define value. 5 1 
+3 What is function cost matrix? 5 1 
+4 What do you understand by value index? 5 1 
+5 Value analysis examines the 
+a) Design of every component 
+b) Method of manufacturing 
+c) Material used 
+d) All of these 
+5 2 
+6 Value analysis is a  process. 
+a) Remedial 
+b) Preventive 
+c) Continuous 
+d) None of these 
+5 1 
+ 
+Questions carrying 5 marks 
+ 
+Sl No Questions CO BTL 
+1 State the types of values. 5 2 
+2 What are the objectives of value analysis? 5 1 
+3 Define the meaning of value analysis. 5 1 
+4 Explain the process of value analysis. 5 1 
+5 Discuss Kaizen 5S model in an industrial concept. 5 1 
+6 Define cost control in a production context. 5 2 
+7 Discuss the importance and methods of cost control. 5 1 
+8 Explain the DARSIRI method of value analysis. 5 1 
+9 Discuss MUDA (waste) management. 5 2 
+ 

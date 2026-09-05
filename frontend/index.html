@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlas | Enterprise Knowledge Assistant</title>
+    <style>
+      :root {
+        --ink: #16252b;
+        --muted: #65757a;
+        --paper: #f5f7f2;
+        --panel: #ffffff;
+        --line: #dce5df;
+        --teal: #087f73;
+        --teal-dark: #075c55;
+        --mint: #e4f3ee;
+        --amber: #f4b942;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        font-family: Georgia, "Times New Roman", serif;
+        color: var(--ink);
+        background: var(--paper);
+        margin: 0;
+        min-height: 100vh;
+        background-image: linear-gradient(135deg, rgba(8, 127, 115, .06), transparent 32%), linear-gradient(315deg, rgba(244, 185, 66, .08), transparent 28%);
+      }
+      .container {
+        width: min(1180px, calc(100% - 40px));
+        margin: 34px auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 290px;
+        gap: 22px;
+      }
+      .main-panel, .side-panel {
+        background: rgba(255, 255, 255, .9);
+        border: 1px solid var(--line);
+        box-shadow: 0 18px 50px rgba(22, 37, 43, .08);
+      }
+      .main-panel { padding: 30px; border-radius: 4px; }
+      .side-panel { padding: 24px; border-radius: 4px; align-self: start; }
+      .eyebrow {
+        color: var(--teal);
+        font: 700 12px/1.2 Arial, sans-serif;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+      }
+      h1 { margin: 8px 0 6px; font-size: clamp(30px, 4vw, 48px); line-height: 1; }
+      .intro { color: var(--muted); margin: 0 0 24px; font: 15px/1.55 Arial, sans-serif; }
+      .chat-box {
+        min-height: 390px;
+        max-height: 55vh;
+        overflow-y: auto;
+        padding: 18px;
+        margin-bottom: 16px;
+        background: #fbfcf9;
+        border: 1px solid var(--line);
+      }
+      .message {
+        width: fit-content;
+        max-width: 86%;
+        margin: 0 0 14px;
+        padding: 14px 16px;
+        border-radius: 3px;
+        font: 15px/1.55 Arial, sans-serif;
+        white-space: pre-wrap;
+      }
+      .user { background: var(--ink); color: white; margin-left: auto; }
+      .assistant { background: var(--mint); color: var(--ink); border-left: 3px solid var(--teal); }
+      .assistant.loading { color: var(--muted); font-style: italic; }
+      .controls { display: flex; gap: 10px; margin-bottom: 10px; }
+      input, button { font: 15px Arial, sans-serif; }
+      input[type="text"] {
+        flex: 1;
+        min-width: 0;
+        padding: 14px 15px;
+        border-radius: 3px;
+        border: 1px solid #bfcfc8;
+        background: white;
+        color: var(--ink);
+        outline: none;
+      }
+      input[type="text"]:focus { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(8, 127, 115, .12); }
+      button {
+        background: var(--teal);
+        color: white;
+        border: 0;
+        border-radius: 3px;
+        padding: 12px 20px;
+        cursor: pointer;
+        font-weight: 700;
+      }
+      button:hover { background: var(--teal-dark); }
+      button:disabled { opacity: .55; cursor: wait; }
+      .hint { color: var(--muted); font: 12px Arial, sans-serif; }
+      .side-panel h2 { margin: 0 0 20px; font-size: 20px; }
+      .upload-zone { border: 1px dashed #a9c2b9; padding: 18px; background: #f6fbf8; }
+      .upload-zone p { color: var(--muted); font: 13px/1.5 Arial, sans-serif; margin: 8px 0 14px; }
+      .upload-zone input { width: 100%; max-width: 100%; font: 12px Arial, sans-serif; }
+      .sources { margin-top: 18px; font: 13px/1.5 Arial, sans-serif; color: var(--muted); }
+      .sources strong { display: block; color: var(--ink); margin-bottom: 8px; }
+      .source-chip { display: block; padding: 8px 10px; margin-top: 6px; background: #f2f5f1; border-left: 2px solid var(--amber); color: var(--ink); }
+      .status { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--line); font: 12px Arial, sans-serif; color: var(--muted); }
+      .status::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #28a77c; margin-right: 7px; }
+      @media (max-width: 800px) {
+        .container { width: min(100% - 24px, 620px); margin: 16px auto; display: block; }
+        .main-panel { padding: 20px; }
+        .side-panel { margin-top: 14px; }
+        .chat-box { min-height: 330px; max-height: none; }
+        .message { max-width: 94%; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <main class="main-panel">
+        <div class="eyebrow">Atlas knowledge desk</div>
+        <h1>Ask your documents.</h1>
+        <p class="intro">Search across your uploaded policies, guides, and notes with answers grounded in the source material.</p>
+        <div class="chat-box" id="chatBox">
+          <div class="message assistant">Welcome. Ask a question about the documents in your knowledge base.</div>
+        </div>
+        <div class="controls">
+          <input id="questionInput" type="text" placeholder="e.g. When must travel claims be submitted?" autocomplete="off" />
+          <button id="askBtn">Ask</button>
+        </div>
+        <div class="hint">Press Enter to send</div>
+        <div class="sources" id="sources"></div>
+      </main>
+
+      <aside class="side-panel">
+        <h2>Knowledge base</h2>
+        <div class="upload-zone">
+          <div class="eyebrow">Add a source</div>
+          <p>Upload a PDF or text document to refresh the search index.</p>
+          <input id="fileInput" type="file" accept=".pdf,.txt" />
+        </div>
+        <div class="status">Assistant online</div>
+      </aside>
+    </div>
+
+    <script>
+      const chatBox = document.getElementById('chatBox');
+      const questionInput = document.getElementById('questionInput');
+      const askBtn = document.getElementById('askBtn');
+      const sourcesBox = document.getElementById('sources');
+      const fileInput = document.getElementById('fileInput');
+
+      function addMessage(role, text) {
+        const div = document.createElement('div');
+        div.className = `message ${role}`;
+        div.textContent = text;
+        chatBox.appendChild(div);
+        chatBox.scrollTop = chatBox.scrollHeight;
+      }
+
+      function cleanAnswer(text) {
+        return String(text || '')
+          .replace(/\*\*(.*?)\*\*/g, '$1')
+          .replace(/__(.*?)__/g, '$1')
+          .replace(/^#{1,6}\s+/gm, '')
+          .trim();
+      }
+
+      async function askQuestion() {
+        const question = questionInput.value.trim();
+        if (!question) {
+          addMessage('assistant', 'Please enter a valid question.');
+          return;
+        }
+
+        addMessage('user', question);
+        questionInput.value = '';
+        askBtn.disabled = true;
+        askBtn.textContent = 'Thinking...';
+        const loadingMessage = document.createElement('div');
+        loadingMessage.className = 'message assistant loading';
+        loadingMessage.textContent = 'Searching the knowledge base...';
+        chatBox.appendChild(loadingMessage);
+
+        try {
+          const response = await fetch('/api/query', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ question })
+          });
+
+          const data = await response.json();
+          loadingMessage.remove();
+          addMessage('assistant', cleanAnswer(data.answer || 'No answer found.'));
+
+          if (data.sources && data.sources.length > 0) {
+            sourcesBox.replaceChildren();
+            const sourceTitle = document.createElement('strong');
+            sourceTitle.textContent = 'Retrieved from';
+            sourcesBox.appendChild(sourceTitle);
+            data.sources.forEach(source => {
+              const chip = document.createElement('span');
+              chip.className = 'source-chip';
+              chip.textContent = source.file;
+              sourcesBox.appendChild(chip);
+            });
+          } else {
+            sourcesBox.textContent = 'No relevant sources found.';
+          }
+        } catch (error) {
+          loadingMessage.remove();
+          addMessage('assistant', 'Something went wrong while querying the documents.');
+        } finally {
+          askBtn.disabled = false;
+          askBtn.textContent = 'Ask';
+        }
+      }
+
+      askBtn.addEventListener('click', askQuestion);
+      questionInput.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+          askQuestion();
+        }
+      });
+
+      fileInput.addEventListener('change', async function () {
+        const file = fileInput.files[0];
+        if (!file) return;
+
+        const formData = new FormData();
+        formData.append('file', file);
+
+        try {
+          const response = await fetch('/api/upload', {
+            method: 'POST',
+            body: formData
+          });
+
+          const data = await response.json();
+          addMessage('assistant', cleanAnswer(data.message || 'Document uploaded.'));
+          fileInput.value = '';
+        } catch (error) {
+          addMessage('assistant', 'Upload failed.');
+        }
+      });
+    </script>
+  </body>
+</html>

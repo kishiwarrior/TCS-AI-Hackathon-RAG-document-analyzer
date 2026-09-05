@@ -1,0 +1,9 @@
+Things to learn:
+
+1. Java
+2. CodeChef
+3. Leetcode
+4. Web Dev
+5. Hackerrank Java
+6. SQL
+7. Build AI projects/raytracer

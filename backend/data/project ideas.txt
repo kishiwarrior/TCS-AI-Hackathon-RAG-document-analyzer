@@ -1,0 +1,6 @@
+project ideas:
+
+1. NLP
+2. itch.io
+3. rhythm typing game
+4. car engine sound identifier

@@ -10,6 +10,10 @@ This project is a simple RAG-style Q&A app for enterprise knowledge documents.
 4. Create a simple web frontend for chat and source display.
 5. Verify the app runs locally on the machine.
 
+The chat includes an answer-language selector for English, Hindi, Bengali, Tamil,
+Telugu, and Marathi. Multilingual generation uses Gemini when `GOOGLE_API_KEY` is
+configured; without it, the local retrieval fallback answers in English.
+
 ## Tech stack
 
 - Python 3.10+

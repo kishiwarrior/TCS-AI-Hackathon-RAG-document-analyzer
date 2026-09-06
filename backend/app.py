@@ -58,6 +58,17 @@ rag_service = RAGService(DATA_DIR)
 
 class QuestionRequest(BaseModel):
     question: str
+    language: str = "English"
+
+
+SUPPORTED_LANGUAGES = {
+    "English",
+    "Hindi",
+    "Bengali",
+    "Tamil",
+    "Telugu",
+    "Marathi",
+}
 
 
 @app.get("/api/health")
@@ -68,7 +79,11 @@ def health_check():
 @app.post("/api/query")
 def query_documents(payload: QuestionRequest):
     question = payload.question.strip()
-    cache_key = question.casefold()
+    language = payload.language.strip() or "English"
+    if language not in SUPPORTED_LANGUAGES:
+        raise HTTPException(status_code=400, detail="Unsupported answer language")
+
+    cache_key = f"{language.casefold()}:{question.casefold()}"
     if cache_key in _query_cache:
         return _query_cache[cache_key]
 
@@ -81,6 +96,7 @@ def query_documents(payload: QuestionRequest):
             prompt = (
                 "You are an enterprise policy assistant. Answer using ONLY the document context provided below. "
                 "If the answer is not in the context, say that you could not find it in the available documents. "
+                f"Answer in {language}. Preserve policy names, numbers, and source meaning accurately. "
                 "Do not invent facts.\n\n"
                 f"Context:\n{context}\n\nQuestion: {question}"
             )

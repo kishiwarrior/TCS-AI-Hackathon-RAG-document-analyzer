@@ -72,6 +72,8 @@
       .assistant.loading { color: var(--muted); font-style: italic; }
       .controls { display: flex; gap: 10px; margin-bottom: 10px; }
       input, button { font: 15px Arial, sans-serif; }
+      .language-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; font: 13px Arial, sans-serif; color: var(--muted); }
+      select { padding: 9px 10px; border: 1px solid #bfcfc8; border-radius: 3px; background: white; color: var(--ink); }
       input[type="text"] {
         flex: 1;
         min-width: 0;
@@ -122,6 +124,18 @@
         <div class="chat-box" id="chatBox">
           <div class="message assistant">Welcome. Ask a question about the documents in your knowledge base.</div>
         </div>
+        <div class="language-row">
+          <label for="languageSelect">Answer language</label>
+          <select id="languageSelect">
+            <option>English</option>
+            <option>Hindi</option>
+            <option>Bengali</option>
+            <option>Tamil</option>
+            <option>Telugu</option>
+            <option>Marathi</option>
+          </select>
+          <span>Powered by Gemini when configured</span>
+        </div>
         <div class="controls">
           <input id="questionInput" type="text" placeholder="e.g. When must travel claims be submitted?" autocomplete="off" />
           <button id="askBtn">Ask</button>
@@ -147,6 +161,7 @@
       const askBtn = document.getElementById('askBtn');
       const sourcesBox = document.getElementById('sources');
       const fileInput = document.getElementById('fileInput');
+      const languageSelect = document.getElementById('languageSelect');
 
       function addMessage(role, text) {
         const div = document.createElement('div');
@@ -173,6 +188,7 @@
 
         addMessage('user', question);
         questionInput.value = '';
+        const language = languageSelect.value;
         askBtn.disabled = true;
         askBtn.textContent = 'Thinking...';
         const loadingMessage = document.createElement('div');
@@ -184,7 +200,7 @@
           const response = await fetch('/api/query', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ question })
+            body: JSON.stringify({ question, language })
           });
 
           const data = await response.json();
